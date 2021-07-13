@@ -1,0 +1,129 @@
+.footer {
+  background-color: $grayColor;
+}
+.container.footer {
+  display: flex;
+}
+.address-box {
+  margin: 60px 70px 0px 0px;
+}
+.address {
+  justify-content: flex-start;
+  width: 231px;
+  height: 81px;
+}
+.address__text {
+  color: $whiteColor;
+}
+.address-list {
+  color: rgba(255, 255, 255, 0.6);
+}
+.footer-social-box {
+  width: 206px;
+  height: 80px;
+  margin: 72px 93px 100px 0px;
+}
+.footer-social__title {
+  font-family: $mainFont;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $whiteColor;
+  margin-bottom: 20px;
+}
+.footer-social-icon-list {
+  display: flex;
+  justify-content: center;
+}
+.footer-social-icon__item {
+  display: flex;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50px;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: color 250ms $timingFunction;
+  &:hover {
+    background-color: $blueColor;
+    cursor: pointer;
+  }
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+.form-footer {
+  position: relative;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.form-footer-sing {
+  position: absolute;
+  top: 46%;
+  left: 42px;
+  transform: translateY(-50px);
+}
+.form-footer-label {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $whiteColor;
+}
+.form-footer-input-mail {
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  margin-top: 20px;
+  background-color: $grayColor;
+  resize: none;
+  padding: 15px 16px;
+  &:focus {
+    color: $whiteColor;
+  }
+}
+.footer-btn {
+  position: absolute;
+  top: 50%;
+  left: 411px;
+  transform: translateY(-27%);
+  width: 200px;
+  height: 50px;
+  background: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  font-weight: bold;
+  font-size: 16px;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: $whiteColor;
+}
+.icon-send {
+  height: 24px;
+  width: 24px;
+  fill: $whiteColor;
+}
+.footer-btn__text {
+  position: absolute;
+  left: 29px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.footer-btn__icon {
+  position: absolute;
+  right: 28px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 24px;
+  height: 24px;
+  background-image: url(/images/icons/icon-send.svg);
+}

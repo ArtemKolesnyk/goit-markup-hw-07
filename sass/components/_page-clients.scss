@@ -1,0 +1,32 @@
+.clients-title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+}
+.clients-list {
+  display: flex;
+  justify-content: space-between;
+}
+.clients-list__item {
+  width: 170px;
+  height: 92px;
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+  &:hover {
+    border: 1px solid $blueColor;
+  }
+}
+.clients-list__icon {
+  fill: $iconColor;
+  width: 106px;
+  height: 60px;
+  margin: 16px 32px;
+  transition: color 250ms $timingFunction;
+  &:hover {
+    fill: $blueColor;
+  }
+}
